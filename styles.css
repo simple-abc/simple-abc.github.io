@@ -1,0 +1,44 @@
+/* The supplied colors use an FF opacity prefix; CSS uses the RGB values. */
+:root {
+  --grape-soda: #754887;
+  --midnight-violet: #31263e;
+  --metallic-gold: #deb841;
+  --honey-bronze: #de9e36;
+  --pale-slate: #bfbdc1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  background: #fff;
+  color: var(--midnight-violet);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  border-bottom: 3px solid var(--metallic-gold);
+  padding-bottom: 1.25rem;
+}
+
+header img {
+  display: block;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 { margin: .5rem 0 0; font-size: 2rem; }
+h2 { color: var(--grape-soda); font-size: 1.5rem; margin: 0 0 1rem; }
+h3 { font-size: 1.1rem; margin: 0 0 .4rem; }
+h1, h2, h3 { line-height: 1.3; }
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+section { padding-top: 2rem; }
+section + section { margin-top: 2rem; border-top: 1px solid var(--pale-slate); }
+article { border-left: 3px solid var(--honey-bronze); padding-left: 1rem; }
